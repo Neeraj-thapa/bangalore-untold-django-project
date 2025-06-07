@@ -245,10 +245,6 @@ ClientBin/
 *.publishsettings
 orleans.codegen.cs
 
-# Including strong name files can present a security risk
-# (https://github.com/github/gitignore/pull/2483#issue-259490424)
-#*.snk
-
 # Since there are multiple workflows, uncomment next line to ignore bower_components
 # (https://github.com/github/gitignore/pull/1529#issuecomment-104372622)
 #bower_components/
@@ -404,3 +400,24 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# Python
+*.pyc
+__pycache__/
+
+# Django
+db.sqlite3
+media/
+
+# Virtual environment
+env/
+venv/
+
+# Static files
+staticfiles/
+
+# VS Code settings
+.vscode/
+
+# Logs
+*.log
