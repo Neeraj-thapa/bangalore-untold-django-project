@@ -72,5 +72,5 @@ def historic(request):
 def cafes(request):
     return render(request, 'explore/cafes.html')
 def explore(request):
-    return render(request, 'explore.html')  # adjust the filename if needed
+    return render(request, 'explore.html')  
 
