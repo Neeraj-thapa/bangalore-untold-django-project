@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Bangalore Untold</title>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'explore' %}">Explore</a>
+        <a href="{% url 'blog' %}">Blog</a>
+        <a href="{% url 'map' %}">Map</a>
+        <a href="{% url 'user_submissions' %}">User Submissions</a>
+        <a href="{% url 'events' %}">Events</a>
+        <a href="{% url 'faq' %}">FAQ</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Welcome to Bangalore Untold</h1>
+        <p>Discover Bangalore’s hidden gems and untold stories</p>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>Why Bangalore Untold?</h2>
+        <p>Bangalore Untold is your ultimate guide to exploring the city beyond its usual landmarks. Whether you’re a new resident, a traveler, or a local looking for something new, we bring you hidden spots, unique experiences, and community-driven insights.</p>
+    </section>
+
+    <section class="details">
+        <h2>How We Help You?</h2>
+        <ul>
+            <li>🗺️ Navigate Bangalore’s **offbeat locations** with our interactive map.</li>
+            <li>📖 Read authentic **blogs and stories** from locals.</li>
+            <li>📝 **Share your own experiences** and contribute to our growing community.</li>
+            <li>🌍 **Connect with other explorers** and uncover Bangalore’s secrets together.</li>
+        </ul>
+    </section>
+    
+    <!-- Back Button -->
+    <button onclick="goBack()" class="back-btn">⬅ Back</button>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+</body>
+</html>

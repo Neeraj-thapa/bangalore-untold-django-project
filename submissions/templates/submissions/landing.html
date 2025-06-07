@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANGALORE UNTOLD</title>
+    {% load static %}
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            transition: background 3s ease-in-out;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            position: relative;
+            flex-direction: row;
+        }
+
+        .icon {
+            width: 100px;
+            height: auto;
+            opacity: 0;
+            transform: scale(0);
+            transition: transform 1s ease-out, opacity 1s ease-out;
+        }
+
+        .text-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1px;
+        }
+
+        .title {
+            font-size: 70px;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: white;
+            opacity: 0;
+            transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+        }
+
+        .tagline {
+            font-size: 18px;
+            font-weight: 300;
+            color: #ddd;
+            opacity: 0;
+            transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+        }
+
+        .bottom-section {
+            position: absolute;
+            bottom: 30px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .explore-text {
+            font-size: 18px;
+            font-weight: 400;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .explore-btn {
+            padding: 12px 30px;
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: black;
+            background-color: gold;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .explore-btn:hover {
+            background-color: black;
+            color: gold;
+            box-shadow: 0 0 10px gold;
+        }
+
+    </style>
+    <script>
+        window.onload = function () {
+            const icon = document.getElementById('icon');
+            const title = document.getElementById('title');
+            const tagline = document.getElementById('tagline');
+            const exploreSection = document.getElementById('bottom-section');
+            const body = document.body;
+
+            // Drop in animation
+            setTimeout(() => {
+                icon.style.opacity = "1";
+                icon.style.transform = "scale(1)";
+            }, 500);
+
+            // Background transition and move left
+            setTimeout(() => {
+                body.style.backgroundColor = "black";
+                icon.style.transform = "translateX(-100%) scale(1)";
+                title.style.opacity = "1";
+                tagline.style.opacity = "1";
+            }, 1500);
+
+            // Fade in bottom section (Explore button & text)
+            setTimeout(() => {
+                exploreSection.style.opacity = "1";
+            }, 2500);
+        };
+    </script>
+</head>
+<body>
+    <div class="container">
+        <img id="icon" class="icon" src="{% static 'submissions/1741445632778.png' %}" alt="Map Pin">
+        <div class="text-content">
+            <div id="title" class="title">BANGALORE UNTOLD</div>
+            <div id="tagline" class="tagline">Wander beyond the known, where Bangalore’s hidden gems quietly shine.</div>
+        </div>
+    </div>
+    
+    <div id="bottom-section" class="bottom-section">
+        <div class="explore-text">Let’s unravel Bangalore and make it an unforgettable experience.</div>
+        <a href="{% url 'home' %}" id="explore-btn" class="explore-btn">Explore</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,821 @@
+Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\submissions\views.py", line 7, in home
+    return render(request, 'submissions/home.html')
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        template_name,
+        ^^^^^^^^^^^^^^
+        skip=history,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 573, in invalid_block_tag
+    raise self.error(
+    ...<3 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 7: 'static'. Did you forget to register or load this tag?
+"GET /home/ HTTP/1.1" 500 161343
+Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\submissions\views.py", line 7, in home
+    return render(request, 'submissions/home.html')
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 519, in parse
+    self.extend_nodelist(nodelist, compiled_result, token)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 536, in extend_nodelist
+    raise self.error(
+    ...<2 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: <ExtendsNode: extends 'submissions/base.html'> must be the first tag in the template.
+"GET /home/ HTTP/1.1" 500 130790
+Internal Server Error: /explore/
+Traceback (most recent call last):
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\submissions\views.py", line 10, in explore
+    return render(request, 'submissions/explore.html')
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 519, in parse
+    self.extend_nodelist(nodelist, compiled_result, token)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 536, in extend_nodelist
+    raise self.error(
+    ...<2 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: <ExtendsNode: extends 'submissions/base.html'> must be the first tag in the template.
+"GET /explore/ HTTP/1.1" 500 134612
+Internal Server Error: /explore/
+Traceback (most recent call last):
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        template_name,
+        ^^^^^^^^^^^^^^
+        skip=history,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\submissions\views.py", line 10, in explore
+    return render(request, 'submissions/explore.html')
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+"GET /explore/ HTTP/1.1" 500 132452
+Internal Server Error: /explore/
+Traceback (most recent call last):
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        template_name,
+        ^^^^^^^^^^^^^^
+        skip=history,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\submissions\views.py", line 10, in explore
+    return render(request, 'submissions/explore.html')
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+"GET /explore/ HTTP/1.1" 500 132452
+Internal Server Error: /explore/
+Traceback (most recent call last):
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        template_name,
+        ^^^^^^^^^^^^^^
+        skip=history,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\submissions\views.py", line 10, in explore
+    return render(request, 'submissions/explore.html')
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+"GET /explore/ HTTP/1.1" 500 131671
+Internal Server Error: /explore/historic/
+Traceback (most recent call last):
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        template_name,
+        ^^^^^^^^^^^^^^
+        skip=history,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\submissions\views.py", line 22, in historic
+    return render(request, 'submissions/explore/historic.html')
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+"GET /explore/historic/ HTTP/1.1" 500 132717
+Internal Server Error: /explore/nature/
+Traceback (most recent call last):
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        template_name,
+        ^^^^^^^^^^^^^^
+        skip=history,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\submissions\views.py", line 13, in nature
+    return render(request, 'submissions/explore/nature.html')
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+"GET /explore/nature/ HTTP/1.1" 500 132649
+Internal Server Error: /explore/nature/
+Traceback (most recent call last):
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        template_name,
+        ^^^^^^^^^^^^^^
+        skip=history,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: submissions/explore/base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\submissions\views.py", line 13, in nature
+    return render(request, 'submissions/explore/nature.html')
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: submissions/explore/base.html
+"GET /explore/nature/ HTTP/1.1" 500 133297
+Internal Server Error: /explore/nature/
+Traceback (most recent call last):
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        template_name,
+        ^^^^^^^^^^^^^^
+        skip=history,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: submissions/explore/base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\submissions\views.py", line 13, in nature
+    return render(request, 'submissions/explore/nature.html')
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: submissions/explore/base.html
+"GET /explore/nature/ HTTP/1.1" 500 133434
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\submissions\views.py", line 60, in submit_entry
+    return render(request, 'submissions/user_submissions.html', {'form': form})
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'user_submissions' not found. 'user_submissions' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 120310
+Internal Server Error: /admin/submissions/submission/
+Traceback (most recent call last):
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: submissions_submission.email
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\contrib\admin\options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\contrib\admin\sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\contrib\admin\options.py", line 2138, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+                                                           ~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: submissions_submission.email
+"GET /admin/submissions/submission/ HTTP/1.1" 500 180065
+Internal Server Error: /submissions/user-submissions/
+Traceback (most recent call last):
+  File "C:\Users\syed Mohammed Arham\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\syed Mohammed Arham\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\submissions\views.py", line 81, in user_submissions
+    return render(request, "user_submissions.html", {"submissions": submissions})
+  File "C:\Users\syed Mohammed Arham\AppData\Roaming\Python\Python313\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\syed Mohammed Arham\AppData\Roaming\Python\Python313\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\syed Mohammed Arham\AppData\Roaming\Python\Python313\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: user_submissions.html
+"GET /submissions/user-submissions/ HTTP/1.1" 500 83583
+Internal Server Error: /submissions/user-submissions/
+Traceback (most recent call last):
+  File "C:\Users\syed Mohammed Arham\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\syed Mohammed Arham\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\submissions\views.py", line 81, in user_submissions
+    return render(request, "user_submissions.html", {"submissions": submissions})
+  File "C:\Users\syed Mohammed Arham\AppData\Roaming\Python\Python313\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\syed Mohammed Arham\AppData\Roaming\Python\Python313\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\syed Mohammed Arham\AppData\Roaming\Python\Python313\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: user_submissions.html
+"GET /submissions/user-submissions/ HTTP/1.1" 500 83583
+Internal Server Error: /submissions/user-submissions/
+Traceback (most recent call last):
+  File "C:\Users\syed Mohammed Arham\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\syed Mohammed Arham\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\submissions\views.py", line 81, in user_submissions
+    return render(request, "user_submissions.html", {"submissions": submissions})
+  File "C:\Users\syed Mohammed Arham\AppData\Roaming\Python\Python313\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\syed Mohammed Arham\AppData\Roaming\Python\Python313\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\syed Mohammed Arham\AppData\Roaming\Python\Python313\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: user_submissions.html
+"GET /submissions/user-submissions/ HTTP/1.1" 500 83583
+Internal Server Error: /explore/markets/
+Traceback (most recent call last):
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\submissions\views.py", line 22, in markets
+    return render(request, 'submissions/explore/markets.html')
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 573, in invalid_block_tag
+    raise self.error(
+    ...<3 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 7: 'static'. Did you forget to register or load this tag?
+Internal Server Error: /explore/markets/
+Traceback (most recent call last):
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\submissions\views.py", line 22, in markets
+    return render(request, 'submissions/explore/markets.html')
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\syed Mohammed Arham\OneDrive\Desktop\selected\OneDrive\Documents\Naveed ulla khan\bangalore_untold\env\Lib\site-packages\django\template\base.py", line 573, in invalid_block_tag
+    raise self.error(
+    ...<3 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 7: 'static'. Did you forget to register or load this tag?
+"GET /explore/markets/ HTTP/1.1" 500 156241

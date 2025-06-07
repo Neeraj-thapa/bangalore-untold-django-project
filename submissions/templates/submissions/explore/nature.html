@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Spots - Bangalore Untold</title>
+    <link rel="stylesheet" href="{% static 'css/global.css' %}">
+</head>
+<body>
+
+    <!-- Back Button -->
+    <button onclick="history.back()" class="back-btn">⬅ Back</button>
+
+    <h1 class="page-title">Nature Spots</h1>
+
+    <div class="card-container">
+        <!-- Example Card -->
+        <div class="card">
+            <img src="path/to/your/image.jpg" alt="Yediyuru Lake Park">
+            <div class="card-content">
+                <h2>Yediyuru Lake Park</h2>
+                <p><strong>Distance from Central Bangalore:</strong> Approximately 7 km</p>
+                <p><strong>Description:</strong> A serene lake park located in Jayanagar, offering a peaceful environment for morning walks and relaxation.</p>
+                <p><strong>Rating:</strong> 4.5/5</p>
+            </div>
+        </div>
+        <!-- Repeat similar blocks for each location -->
+    </div>
+
+</body>
+</html>

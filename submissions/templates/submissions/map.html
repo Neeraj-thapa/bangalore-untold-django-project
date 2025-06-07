@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Map - Bangalore Untold</title>
+    <link rel="stylesheet" href="{% static 'css/map.css' %}">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+
+    <!-- Back Button -->
+    <button onclick="history.back()" class="back-btn">⬅ Back</button>
+
+    <h1 class="page-title">Bangalore Untold - Interactive Map</h1>
+
+    <!-- Search Bar -->
+    <input type="text" id="search-box" placeholder="Search for a place..." onkeyup="searchLocation()">
+
+    <!-- Category Filter -->
+    <select id="category-filter" onchange="filterMarkers()">
+        <option value="all">All</option>
+        <option value="markets">Markets</option>
+        <option value="historic">Historic Places</option>
+        <option value="cafes">Cafés</option>
+        <option value="nature">Nature Spots</option>
+    </select>
+
+    <!-- Map Container -->
+    <div id="map"></div>
+
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <!-- External JavaScript -->
+    <script src="{% static 'js/map.js' %}"></script>
+
+</body>
+</html>

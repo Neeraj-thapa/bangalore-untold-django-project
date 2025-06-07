@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ, About & Contact - Bangalore Untold</title>
+    <link rel="stylesheet" href="{% static 'css/faq.css' %}">
+</head>
+<body>
+    
+    <!-- Back Button -->
+    <button onclick="history.back()" class="back-btn">⬅ Back</button>
+
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+        
+        <div class="faq-section">
+            <div class="faq">
+                <h3>Q: What is Bangalore Untold?</h3>
+                <p>A: Bangalore Untold is a platform that uncovers hidden gems, historic spots, and cultural hotspots across Bangalore.</p>
+            </div>
+            <div class="faq">
+                <h3>Q: How can I contribute to Bangalore Untold?</h3>
+                <p>A: You can submit locations and event details through our submission forms.</p>
+            </div>
+            <div class="faq">
+                <h3>Q: Is there a way to contact the team?</h3>
+                <p>A: Yes, you can reach us through the contact form below.</p>
+            </div>
+        </div>
+
+        <h1>About Us</h1>
+        <p>
+            Bangalore Untold is a passion-driven initiative to showcase the lesser-known yet fascinating places of Bangalore.
+            We aim to provide authentic and insightful content about the city's vibrant culture, history, and modern attractions.
+        </p>
+
+        <!-- Meet the Team Section -->
+      
+
+        <!-- Contact Form -->
+        <h1>Contact Us</h1>
+        <form method="post" action="{% url 'submit_feedback' %}">
+            {% csrf_token %}
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>

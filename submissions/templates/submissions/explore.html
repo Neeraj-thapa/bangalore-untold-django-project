@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore - Bangalore Untold</title>
+    <link rel="stylesheet" href="{% static 'css/explore.css' %}">
+</head>
+<body>
+    <!-- Back Button -->
+    <button onclick="goBack()" class="back-btn">⬅ Back</button>
+    
+    <div class="container">
+        <h1>Explore</h1>
+        <div class="grid">
+            <a href="{% url 'nature' %}" class="card">
+                <img src="{% static 'submissions/nature_icon.jpg' %}" alt="Nature and Trial Parks">
+                <p>Nature and Trial Parks</p>
+            </a>
+            <a href="{% url 'historic' %}" class="card">
+                <img src="{% static 'submissions/historic_icon.jpg' %}" alt="Historic Places">
+                <p>Historic Places</p>
+            </a>
+            <a href="{% url 'markets' %}" class="card">
+                <img src="{% static 'submissions/market_icon.jpg' %}" alt="Markets">
+                <p>Markets</p>
+            </a>
+            <a href="{% url 'cafes' %}" class="card">
+                <img src="{% static 'submissions/cafe_icon.jpg' %}" alt="Cafes">
+                <p>Cafes</p>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    text-align: center;
+}
+
+.page-title {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.filters {
+    margin: 20px 0;
+}
+
+.filter-btn {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.event-card {
+    background: #1e1e1e;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event-card img {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.event-details {
+    text-align: left;
+    padding: 10px;
+}
+
+.book-btn {
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.reviews {
+    margin-top: 10px;
+}

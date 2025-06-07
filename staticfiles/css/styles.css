@@ -1,0 +1,120 @@
+/* General Page Styling */
+body {
+    background-color: #121212;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background 0.3s;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 20px;
+    transition: color 0.3s;
+}
+.navbar a:hover {
+    color: gold;
+}
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url('/static/images/hero-bg.jpg') no-repeat center center/cover;
+    backdrop-filter: blur(5px);
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Buttons */
+button, .explore-btn {
+    padding: 14px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    background: linear-gradient(135deg, gold, orange);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+button:hover, .explore-btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+}
+
+/* Categories & Places */
+.categories, .places {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    padding: 50px 30px;
+}
+.category-card, .place-card {
+    width: 350px;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(34, 34, 34, 0.95);
+    color: white;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+.category-card:hover, .place-card:hover {
+    transform: translateY(-6px) scale(1.1);
+    box-shadow: 0 0 25px gold;
+}
+
+/* Map Section */
+#map {
+    width: 95%;
+    height: 550px;
+    border-radius: 15px;
+    margin-top: 40px;
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.3);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.8);
+    margin-top: 50px;
+    font-size: 15px;
+    color: #ddd;
+}
+body {
+    background-color: red !important;
+}

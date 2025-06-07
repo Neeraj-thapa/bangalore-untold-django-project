@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit a Place/Event - Bangalore Untold</title>
+    <link rel="stylesheet" href="{% static 'css/submissions.css' %}">
+</head>
+<body>
+
+    <!-- Back Button -->
+    <button onclick="history.back()" class="back-btn">⬅ Back</button>
+
+    <div class="container">
+        <h1>Submit a Place or Event</h1>
+        
+        <p>Fill out the details below to add a new place or event to Bangalore Untold. Submissions will be reviewed before approval.</p>
+
+        <form method="post" action="{% url 'submit_place' %}" enctype="multipart/form-data">
+            {% csrf_token %}
+            
+            <!-- Title -->
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <!-- Category -->
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+                <option value="Historic Places">Historic Places</option>
+                <option value="Markets">Markets</option>
+                <option value="Cafés">Cafés</option>
+                <option value="Nature Spots">Nature Spots</option>
+                <option value="Events">Events</option>
+            </select>
+
+            <!-- Description -->
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="5" required></textarea>
+
+            <!-- Image Upload -->
+            <label for="image">Upload Image:</label>
+            <input type="file" id="image" name="image" accept="image/*" onchange="previewImage(event)" required>
+            <img id="imagePreview" src="" alt="Image Preview" style="display: none; width: 100px; height: auto; margin-top: 10px;">
+
+            <!-- Location (Optional) -->
+            <label for="location">Location (Optional):</label>
+            <input type="text" id="location" name="location" placeholder="Enter location (if available)">
+
+            <!-- User Name -->
+            <label for="submitted_by">Your Name:</label>
+            <input type="text" id="submitted_by" name="submitted_by" required>
+
+            <!-- User Email -->
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+
+        <p class="note">⚠ All submissions must follow community guidelines and should not contain offensive content.</p>
+    </div>
+
+    <script>
+        function previewImage(event) {
+            var reader = new FileReader();
+            reader.onload = function(){
+                var img = document.getElementById('imagePreview');
+                img.src = reader.result;
+                img.style.display = 'block';
+            }
+            reader.readAsDataURL(event.target.files[0]);
+        }
+    </script>
+
+</body>
+</html>

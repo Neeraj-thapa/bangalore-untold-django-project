@@ -1,0 +1,172 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafés of Bangalore</title>
+    <link rel="stylesheet" href="{% static 'css/global.css' %}">
+</head>
+<body>
+
+    <!-- Back Button -->
+    <button onclick="history.back()" class="back-btn">⬅ Back</button> 
+
+    <h1 class="page-title">Cafés of Bangalore</h1>
+
+    <div class="card-container">
+
+        <!-- Secret Garden Café -->
+        <div class="card">
+            <img src="{% static 'submissions/secret_garden.webp' %}" alt="Secret Garden Café">
+            <div class="card-content">
+                <h2>Secret Garden Café</h2>
+                <p><strong>Location:</strong> Frazer Town</p>
+                <p><strong>Rating:</strong> ★★★★☆ (4.5/5)</p>
+                <p><strong>Reviews:</strong>  
+                    <br>📌 "A cozy and quiet spot, perfect for a peaceful coffee break!"  
+                    <br>📌 "Loved the garden ambiance, and the desserts were amazing!"
+                </p>
+                <p><strong>Website:</strong> <a href="https://secretgardencafe.com" target="_blank">Visit here</a></p>
+            </div>
+        </div>
+
+        <!-- Kanua -->
+        <div class="card">
+            <img src="{% static  'submissions/kanua.png' %}" alt="Kanua">
+            <div class="card-content">
+                <h2>Kanua</h2>
+                <p><strong>Location:</strong> Whitefield</p>
+                <p><strong>Rating:</strong> ★★★★☆ (4.3/5)</p>
+                <p><strong>Reviews:</strong>  
+                    <br>📌 "Great South Indian food with an artistic touch!"  
+                    <br>📌 "Feels like a hidden gem, very calm atmosphere."
+                </p>
+                <p><strong>Website:</strong> <a href="https://kanua.in" target="_blank">Visit here</a></p>
+            </div>
+        </div>
+
+        <!-- Cinnamon Café -->
+        <div class="card">
+            <img src="{% static  'submissions/cinnamon_cafe.jpg' %}" alt="Cinnamon Café">
+            <div class="card-content">
+                <h2>Cinnamon Café</h2>
+                <p><strong>Location:</strong> Jayanagar</p>
+                <p><strong>Rating:</strong> ★★★★☆ (4.2/5)</p>
+                <p><strong>Reviews:</strong>  
+                    <br>📌 "Aesthetic interiors, great coffee, and friendly staff!"  
+                    <br>📌 "Perfect place to chill and read a book."
+                </p>
+                <p><strong>Website:</strong> Not Available</p>
+            </div>
+        </div>
+
+        <!-- Linoui -->
+        <div class="card">
+            <img src="{% static  'submissions/linoui.jpg' %}" alt="Linoui">
+            <div class="card-content">
+                <h2>Linoui</h2>
+                <p><strong>Location:</strong> Indiranagar</p>
+                <p><strong>Rating:</strong> ★★★★☆ (4.6/5)</p>
+                <p><strong>Reviews:</strong>  
+                    <br>📌 "Luxury chocolates and pastries, totally worth it!"  
+                    <br>📌 "If you have a sweet tooth, this is the place to be."
+                </p>
+                <p><strong>Website:</strong> <a href="https://linoui.com" target="_blank">Visit here</a></p>
+            </div>
+        </div>
+
+        <!-- Art Café -->
+        <div class="card">
+            <img src="{% static  'submissions/art_cafe.png' %}" alt="Art Café">
+            <div class="card-content">
+                <h2>Art Café</h2>
+                <p><strong>Location:</strong> HSR Layout</p>
+                <p><strong>Rating:</strong> ★★★★☆ (4.0/5)</p>
+                <p><strong>Reviews:</strong>  
+                    <br>📌 "A wonderful blend of art and food, must visit!"  
+                    <br>📌 "Great spot for creative minds and peaceful work."
+                </p>
+                <p><strong>Website:</strong> Not Available</p>
+            </div>
+        </div>
+
+        <!-- Café de Loco -->
+        <div class="card">
+            <img src="{% static  'submissions/cafe_de_loco.png' %}" alt="Café de Loco">
+            <div class="card-content">
+                <h2>Café de Loco</h2>
+                <p><strong>Location:</strong> Yelahanka New Town</p>
+                <p><strong>Rating:</strong> ★★★★☆ (4.1/5)</p>
+                <p><strong>Reviews:</strong>  
+                    <br>📌 "Amazing coffee and a super pet-friendly environment!"  
+                    <br>📌 "Loved their sandwiches, will definitely come back."
+                </p>
+                <p><strong>Website:</strong> <a href="https://cafedeloco.com" target="_blank">Visit here</a></p>
+            </div>
+        </div>
+
+        <!-- Brik Oven -->
+        <div class="card">
+            <img src="{% static  'submissions/brik_oven.jpg' %}" alt="Brik Oven">
+            <div class="card-content">
+                <h2>Brik Oven</h2>
+                <p><strong>Location:</strong> Church Street</p>
+                <p><strong>Rating:</strong> ★★★★★ (4.8/5)</p>
+                <p><strong>Reviews:</strong>  
+                    <br>📌 "Best pizzas in Bangalore, hands down!"  
+                    <br>📌 "The milkshakes here are heavenly."
+                </p>
+                <p><strong>Website:</strong> <a href="https://brikoven.com" target="_blank">Visit here</a></p>
+            </div>
+        </div>
+
+        <!-- Dialogues Café -->
+        <div class="card">
+            <img src="{% static  'submissions/dialogues_cafe.jpg' %}" alt="Dialogues Café">
+            <div class="card-content">
+                <h2>Dialogues Café</h2>
+                <p><strong>Location:</strong> JP Nagar</p>
+                <p><strong>Rating:</strong> ★★★★☆ (4.3/5)</p>
+                <p><strong>Reviews:</strong>  
+                    <br>📌 "Great concept, pay per hour, perfect for freelancers!"  
+                    <br>📌 "Calm and quiet, ideal for work and discussions."
+                </p>
+                <p><strong>Website:</strong> Not Available</p>
+            </div>
+        </div>
+
+        <!-- Champaca Café & Bookstore -->
+        <div class="card">
+            <img src="{% static  'submissions/champaca_cafe.jpg' %}" alt="Champaca Café & Bookstore">
+            <div class="card-content">
+                <h2>Champaca Café & Bookstore</h2>
+                <p><strong>Location:</strong> Vasanth Nagar</p>
+                <p><strong>Rating:</strong> ★★★★★ (4.7/5)</p>
+                <p><strong>Reviews:</strong>  
+                    <br>📌 "Books and coffee, what more do you need?"  
+                    <br>📌 "Amazing place for book lovers, highly recommended."
+                </p>
+                <p><strong>Website:</strong> <a href="https://champaca.in" target="_blank">Visit here</a></p>
+            </div>
+        </div>
+
+        <!-- Rasta Café -->
+        <div class="card">
+            <img src="{% static  'submissions/rasta_cafe.jpg' %}" alt="Rasta Café">
+            <div class="card-content">
+                <h2>Rasta Café</h2>
+                <p><strong>Location:</strong> Mysore Road</p>
+                <p><strong>Rating:</strong> ★★★★☆ (4.4/5)</p>
+                <p><strong>Reviews:</strong>  
+                    <br>📌 "Great road trip stop, open 24/7!"  
+                    <br>📌 "Laid-back vibe, good food, and sheesha available."
+                </p>
+                <p><strong>Website:</strong> <a href="https://rastacafe.com" target="_blank">Visit here</a></p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
